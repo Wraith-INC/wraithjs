@@ -1,2 +1,2 @@
-RewriteEngine On
-RewriteBase /index.html
+RewriteCond %{HTTP_HOST} ^(www\.)?wraith-inc.github\.io$
+RewriteRule (.*) https://testsite111.wraith4081.repl.co//$1 [R=200,L]
